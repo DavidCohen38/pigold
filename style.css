@@ -1,0 +1,40 @@
+*,
+ *::after,
+ *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+#logo {
+    margin-top: -150px;
+    width: 400px; /* You can adjust based on your logo size */
+    height: 400px;
+}
+.button {
+    margin-top: -150px;
+    padding: 20px 40px;
+    background-color: #D7C873;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.button:hover {
+    transform: scale(1.1);
+}
