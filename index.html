@@ -6,12 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="big.png" type="image/x-icon">
     <title>Golden Risk</title>
 </head>
 
 <body>
     <img id="logo" src="logo.png" alt="PiGold Logo">
     <button class="button">Risk Gold</button>
+    <script>
+        function messageTwitter() {
+            const twitterLink = 'https://twitter.com/intent/tweet?text=';
+            const message = `This tweet is my GoldenRisk registration for @PiGoldETH.`;
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`${twitterLink}${encodedMessage}`, '_blank');
+        };
+        
+        document.querySelector('.button').addEventListener('click', messageTwitter);
+    </script>
 </body>
 
 </html>

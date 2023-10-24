@@ -8,7 +8,9 @@
     list-style: none;
     scroll-behavior: smooth;
 }
-
+a, a:hover, a:focus, a:active, a:visited {
+    color: #000;
+}
 body {
     background-color: #000;
     display: flex;
